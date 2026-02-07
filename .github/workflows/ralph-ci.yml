@@ -1,0 +1,14 @@
+name: ralph-loop CI
+on:
+  pull_request:
+    branches: [ main ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run basic checks
+        run: |
+          echo "Running basic ralph-loop CI checks"
+          echo "(Add your real tests here)"
+          ls -la
